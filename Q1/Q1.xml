@@ -17,7 +17,9 @@
 				<p>https://he.wikipedia.org/wiki/%D7%9C%D7%A7%D7%A1%D7%99%D7%A7%D7%95%D7%9F_%D7%94%D7%A7%D7%A9%D7%A8%D7%99%D7%9D_%D7%9C%D7%A1%D7%95%D7%A4%D7%A8%D7%99%D7%9D_%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%9D</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc></profileDesc>
+		<profileDesc>
+			
+		</profileDesc>
 	</teiHeader>
 	<text>
 		<body>
@@ -36,7 +38,7 @@
 			<div type="content">
 				<p>נולד ב
 					<placeName>חולון</placeName> וגדל בה. סיים תואר ראשון בספרות ובמשפטים ב
-					<orgName ref="#HEBUNI">אוניברסיטה העברית</orgName> ב
+					<orgName>אוניברסיטה העברית</orgName> ב
 					<placeName>ירושלים</placeName>, ותואר שני בספרות עברית ב
 					<orgName>אוניברסיטת בן גוריון</orgName>
 					<placeName>בנגב</placeName>. מאז 2008 משמש כעורך ספרות המקור וספרות המתח והבלשים בהוצאת 
@@ -60,21 +62,17 @@
 						<forename>עוז</forename>
 					</persName>. כמה מהמבקרים ציינו שהספר מקורי, חשוב ומעורר פולמוס, וכי טענותיו המורכבות של משעני מנוסחות באופן קולע. מבקרים אחרים טענו כי הוא חוטא בעמדה מזרחית מהותנית, וכי אינו מנסח באופן חיובי ועצמאי מיהו מזרחי ומהי מזרחיות. 
 				</p>
-				<p>תירגם מצרפתית שני טקסטים של פילוסופים צרפתים, שיצאו בעברית בכרך אחד: "מות המחבר" של 
-					<persName>
+				<p>תירגם מצרפתית שני טקסטים של פילוסופים צרפתים, שיצאו בעברית בכרך אחד: "<name type="book">מות המחבר</name>"
+					של <persName>
 						<surname>רולאן</surname>
 						<forename>בארת</forename>
-					</persName> ו"מהו מחבר" של 
-					<persName>
+					</persName> ו"<name type="book">מהו מחבר</name>" של <persName>
 						<surname>מישל</surname>
 						<forename>פוקו</forename>
-					</persName> (2005), וכן את ערבי 
-					<placeName>פריז</placeName> ל
-					<persName>
+					</persName> (2005), וכן את ערבי <placeName>פריז</placeName> ל <persName>
 						<surname>רולאן</surname>
 						<forename>בארת</forename>
-					</persName> (2004).
-				</p>
+					</persName> (2004). </p>
 			</div>
 			<div type="bibliography">
 				<listBibl>
