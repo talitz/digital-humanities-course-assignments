@@ -5,10 +5,11 @@
 <TEI
 	xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+	
 		<fileDesc>
 			<titleStmt>
-				<title>משעני, דרור</title>
-				<author>עירית רונן</author>
+				<title>דרור משעני</title>
+				<author><persName>עירית רונן</persName></author>
 			</titleStmt>
 			<publicationStmt>
 				<p>Publication Information - None</p>
@@ -23,6 +24,11 @@
 	</teiHeader>
 	<text>
 		<body>
+			
+			
+			
+			
+			
 			<head>
 				<persName>
 					<surname>משעני</surname>, 
@@ -32,9 +38,19 @@
 					
 				</persName>
 			</head>
-			<div type="roles">
-				<p>עורך, סופר, מתרגם וחוקר ספרות</p>
-			</div>
+			<listPerson>
+				<person xml:id="dm" sex="male" role="עורך, סופר, מתרגם, חוקר ספרות">
+					<persName>
+						<forename>דרור</forename>
+						<surname>משעני</surname>
+						</persName>
+					<birth when="1975-06-23"> <placeName>
+						<settlement type="city">חולון</settlement>
+					</placeName>
+					</birth>
+					<education>האוניברסיטה העברית, אוניברסיטת בן גוריון</education>
+				</person>
+			</listPerson>
 			<div type="content">
 				<p>נולד ב <placeName>חולון</placeName> וגדל בה. סיים תואר ראשון בספרות ובמשפטים ב
 						<orgName>אוניברסיטה העברית</orgName> ב <placeName>ירושלים</placeName>, ותואר
@@ -91,14 +107,6 @@
 								2006</date></date>. 11. </bibl>
 				</listBibl>
 			</div>
-			<div>
-				<p>
-						<persName>
-							<surname>עירית</surname>, 
-							<forename>רונן</forename>
-						</persName>
-				</p>
-			</div>
-		</body>
+				</body>
 	</text>
 </TEI>
