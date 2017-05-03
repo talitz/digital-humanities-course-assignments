@@ -1,0 +1,45 @@
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <persName>
+            <forename>דרור</forename>
+            <surname>﻿משעני</surname>
+          </persName>
+        </title>
+        <author>
+          <persName>
+            <forename>עירית</forename>
+            <surname>רונן</surname>
+          </persName>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information - None</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>https://he.wikipedia.org/wiki/%D7%9C%D7%A7%D7%A1%D7%99%D7%A7%D7%95%D7%9F_%D7%94%D7%A7%D7%A9%D7%A8%D7%99%D7%9D_%D7%9C%D7%A1%D7%95%D7%A4%D7%A8%D7%99%D7%9D_%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%9D</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>
+        <persName><surname>﻿משעני</surname>, <forename>דרור</forename>(<date when="1975">1975</date>)</persName>
+      </head>
+      <listPerson>
+        <person role="עורך, סופר, מתרגם וחוקר ספרות" sex="male" xml:id="dm">
+          <persName>
+            <surname>﻿משעני</surname>
+            <forename>דרור</forename>
+          </persName>
+          <birth when="1975"/>
+          <education> </education>
+        </person>
+      </listPerson>
+      <div type="content">Yael Netzer is onFire!</div>
+      <div type="bibliography">Totah!!!</div>
+    </body>
+  </text>
+</TEI>
