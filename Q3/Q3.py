@@ -5,6 +5,8 @@ from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 import datetime
 from xml.etree import ElementTree
 from xml.dom import minidom
+from lxml import etree
+import xml.etree.ElementTree as ET
 
 def prettify(elem):
     """Return a pretty-printed XML string for the Element.
@@ -36,10 +38,10 @@ titleStmt = SubElement(fileDesc, 'titleStmt')
 
 
 title = SubElement(titleStmt,'title')
-title.text = seperate_file_to_paragraph("lex.txt")[-1]
+title.text = seperate_file_to_paragraph("lex.txt")[0].decode('utf-8')
 
 author = SubElement(titleStmt,'author')
-author.text = seperate_file_to_paragraph("LexiconDetails.txt")[0]
+author.text = u'שלום'
 
 publicationStmt = SubElement(fileDesc, 'publicationStmt')
 
@@ -57,7 +59,7 @@ text = SubElement(top, 'text')
 body = SubElement(text, 'body')
 body.text = 'body'
 
-file = open('Q3.xml', 'w');
-file.write(prettify(top));
-   
+ET.ElementTree(top).write("Q3.XML",encoding="UTF-8",xml_declaration=True)
+tree = etree.parse("Q3.XML")
+tree.write("Q3.XML", pretty_print=True, encoding='utf-8')
 
