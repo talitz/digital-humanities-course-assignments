@@ -1,0 +1,83 @@
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <persName>
+            <forename>דרור</forename>
+            <surname>משעני</surname>
+          </persName>
+        </title>
+        <author>
+          <persName>
+            <forename>עירית</forename>
+            <surname>רונן</surname>
+          </persName>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information - None</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>https://he.wikipedia.org/wiki/%D7%9C%D7%A7%D7%A1%D7%99%D7%A7%D7%95%D7%9F_%D7%94%D7%A7%D7%A9%D7%A8%D7%99%D7%9D_%D7%9C%D7%A1%D7%95%D7%A4%D7%A8%D7%99%D7%9D_%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%9D</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>
+        <persName><surname>משעני</surname>, <forename>דרור</forename>(<date when="1975">1975</date>)</persName>
+      </head>
+      <listPerson>
+        <person role="עורך, סופר, מתרגם וחוקר ספרות" sex="male" xml:id="dm">
+          <persName>
+            <surname>משעני</surname>
+            <forename>דרור</forename>
+          </persName>
+          <birth when="1975"/>
+          <education> </education>
+        </person>
+      </listPerson>
+      <div type="content">
+        <p> <placeName> נולד </placeName> <placeName> בחולון </placeName> וגדל בה. סיים תואר ראשון בספרות ובמשפטים באוניברסיטה העברית <placeName> בירושלים, </placeName> ותואר שני בספרות <placeName> עברית </placeName> <orgName> באוניברסיטת </orgName> בן-גוריון <persName> בנגב. </persName> מאז 2008 משמש כעורך ספרות המקור וספרות המתח והבלשים בהוצאת כתר, ומורה בחוג לספרות <orgName> באוניברסיטת </orgName> <orgName> תל </orgName> <orgName> אביב. </orgName> </p>
+        <p> פירסם פרקים בספרי מחקר העוסקים בקונפליקט הזהות המזרחית בספרות, בספרות בלשית, ועוד. ב-1999 זכה בתחרות הסיפור הקצר <date> של </date> עיתון <placeName> הארץ. </placeName> ב-2002 זכה בפרס שלישי בתחרות הסרט הקצר <date> של </date> פסטיבל הסרטים <placeName> בקאן </placeName> (על הסרט שאלות <date> של </date> <orgName> פועל </orgName> מת). ב-2011 ראה אור ספר הפרוזה הראשון שלו, תיק נעדר (כתר), <persName> רומן </persName> מתח שבמרכזו דמות הבלש. הספר התקבל באהדה רבה בארץ, והוא זוכה להתעניינות נרחבת בכמה מדינות בעולם. היה מועמד <placeName> לפרס </placeName> מטעם איגוד סופרי המתח הבריטיים, וזכויות התרגום שלו נמכרו לשפות רבות.   </p>
+        <p> ב-2006 ראה אור ספרו בכל העניין <persName> המזרחי </persName> יש איזה אבסורד. ספר מחקרי-ביקורתי זה עוסק בהופעת נושא המזרחיות בשיח התרבותי, הספרותי והפוליטי הישראלי ובמשמעויותיו, דרך עיון ברומנים <date> של </date> הסופרים <persName> קנז, </persName> <persName> יהושע </persName> ועוז. כמה מהמבקרים ציינו שהספר מקורי, חשוב ומעורר פולמוס, וכי טענותיו המורכבות <date> של </date> משעני מנוסחות באופן קולע. מבקרים אחרים טענו כי הוא חוטא בעמדה מזרחית מהותנית, וכי אינו מנסח באופן חיובי ועצמאי מיהו מזרחי ומהי מזרחיות. </p>
+        <p> תירגם מצרפתית שני טקסטים <date> של </date> פילוסופים צרפתים, שיצאו <persName> בעברית </persName> בכרך אחד: "מות המחבר" <date> של </date> <orgName> רולאן </orgName> בארת ו"מהו מחבר" <date> של </date> <persName> מישל </persName> <persName> פוקו </persName> (2005), וכן את ערבי <placeName> פריז </placeName> <placeName> לרולאן </placeName> בארת (2004). </p>
+      </div>
+      <div type="bibliography">
+        <listBibl>
+          <bibl>
+            <persName>
+              <forename>עדי</forename>
+              <surename>אופיר</surename>
+            </persName>
+            <title>"פוקו הטוניסאי"</title>
+            <publisher>הארץ ספרים</publisher>
+            <date>21.12.2005</date>
+            <biblScope unit="page">46, 48</biblScope>
+          </bibl>
+          <bibl>
+            <persName>
+              <forename>חנן</forename>
+              <surename> חבר</surename>
+            </persName>
+            <title>"בין ניכוס לחתרנות"</title>
+            <publisher>מחקרי ירושלים בספרות עברית כ"ב</publisher>
+            <date>2008</date>
+            <biblScope unit="page">592-588</biblScope>
+          </bibl>
+          <bibl>
+            <persName>
+              <forename>רוני</forename>
+              <surename> סומק</surename>
+            </persName>
+            <title>"כדור בראש"</title>
+            <publisher>עתון 77 309­-310</publisher>
+            <date>אפריל-מאי 2006</date>
+            <biblScope unit="page">11</biblScope>
+          </bibl>
+        </listBibl>
+      </div>
+    </body>
+  </text>
+</TEI>

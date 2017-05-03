@@ -135,10 +135,10 @@ def get_gender(filename):
 	else:
 		return 'unknown'
 
-print get_gender('lex2.txt')
+#print get_gender('lex2.txt')
 
 ###### main  ######
-
+"""
 list_of_tuples = []
 tagged_sentences = split_file_to_tagged_sentences('output.txt')
 for sentence in tagged_sentences:
@@ -147,10 +147,10 @@ for sentence in tagged_sentences:
 
 dic =  get_dic_of_word_and_ner(list_of_tuples)
 
-lex = seperate_file_to_paragraph("lex.txt")
+lex = seperate_file_to_paragraph("lex2.txt")
 
 create_paragraph(lex[4],dic)
-
+"""
 
 #for x in  get_bibl_of_lex(lex):
 #	create_xml_bibl_element(BiblElement(x))
