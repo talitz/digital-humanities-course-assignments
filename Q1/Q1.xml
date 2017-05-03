@@ -8,8 +8,8 @@
 	
 		<fileDesc>
 			<titleStmt>
-				<title><surname>משעני</surname><forename>דרור</forename></title>
-				<author><persName><surname>עירית</surname><forename>רונן</forename></persName></author>
+				<title><persName><surname>משעני</surname><forename>דרור</forename></persName></title>
+				<author><persName><surname>רונן</surname><forename>עירית</forename></persName></author>
 			</titleStmt>
 			<publicationStmt>
 				<p>Publication Information - None</p>
@@ -26,8 +26,7 @@
 		<body>
 			<head>
 				<persName>
-					<surname>משעני</surname>, 
-					<forename>דרור</forename>
+					<surname>משעני</surname>, <forename>דרור</forename>
 					(
 					<date when="1975">1975</date>)
 					
@@ -36,8 +35,7 @@
 			<listPerson>
 				<person xml:id="dm" sex="male" role="עורך, סופר, מתרגם, חוקר ספרות">
 					<persName>
-						<forename>דרור</forename>
-						<surname>משעני</surname>
+						<surname>משעני</surname><forename>דרור</forename>
 						</persName>
 					<birth when="1975-06-23"> <placeName>
 						<settlement type="city">חולון</settlement>
