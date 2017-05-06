@@ -489,4 +489,3 @@
 
 0 עירית עירייה עירית properName unspecified unspecified unspecified unspecified unspecified  	I_PERS	null
 1 רונן רונן רונן properName unspecified unspecified unspecified unspecified unspecified  	I_PERS	null
-

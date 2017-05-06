@@ -79,7 +79,7 @@ def ner_tag_to_tei_tag(elm):
 	tei = ['placeName','persName','orgName','date']
 	return tei[ners.index(elm)]
 
-def get_dic_of_word_and_ner(list):
+def get_dic_of_word_and_ner3(list):
 	dic = {}
 	for x in list:
 		if x.ner and x.ner[:2] != 'I_':
@@ -89,6 +89,27 @@ def get_dic_of_word_and_ner(list):
 		elif x.ner[:2] == 'I_':
 			dic[x.word] = [x.ner]
 	return dic
+
+def get_dic_of_word_and_ner(list):
+	dic = {}
+	for x in list:
+		if not x.ner:
+			x.ner = 0
+		if x.word in dic:
+			dic[x.word].append(x.ner)
+		else:
+			dic[x.word] = [x.ner]
+	return dic
+
+
+def read_languages_file(filename):
+	file = open(filename,"rb")
+	text = file.readlines()
+	return list(map(get_string_without_last_char, text))
+
+def get_string_without_last_char(string):
+	return string[:-1]
+
 
 def seperate_file_to_paragraph(filename):
 	file = open(filename,"rb")
@@ -104,12 +125,19 @@ def get_all_brackets(string):
 def tag_word(word,tag):
 	return '<' + tag + '> ' + word + ' </' + tag + '>'
 
-def create_paragraph(string,dic):
+def create_paragraph(string,dic,langs):
 	xml_string = '<p> ' + string + ' </p>'
 	ret_string = ''
 	for word in xml_string.split(' '):
 		if word.replace('.','').replace(',', '').replace('?', '') in dic:
-			ret_string = ret_string + tag_word(word,ner_tag_to_tei_tag(dic[word.replace('.','').replace(',','')][0])) + ' '
+			if dic[word.replace('.','').replace(',','')][0] in ['I_LOC','I_DATE','I_PERS','I_ORG']:
+				ret_string = ret_string + tag_word(word,ner_tag_to_tei_tag(dic[word.replace('.','').replace(',','')][0])) + ' '
+			else:
+				if word.replace('.','').replace(',', '') in langs or word[1:].replace('.','').replace(',', '') in langs or word[2:].replace('.','').replace(',', '') in langs:
+					ret_string = ret_string + tag_word(word,'lang') + ' '
+				else:
+					ret_string = ret_string + word + ' '
+			del dic[word.replace('.','').replace(',','')][0]
 		else:
 			ret_string = ret_string + word + ' '
 
@@ -135,7 +163,7 @@ def create_xml_bibl_element(bibl):
 	return top
 
 	
-file_path = "lex3.txt"
+file_path = "lex2.txt"
 		
 top = Element('TEI')
 
@@ -262,10 +290,12 @@ for sentence in tagged_sentences:
 	for parsed_word in sentence:
 		list_of_tuples.append(TaggedWords(get_word_only(split_to_words(parsed_word)) , get_ner_only(split_to_words(parsed_word))))
 
+langs = read_languages_file("langs")
+
 dic =  get_dic_of_word_and_ner(list_of_tuples)
 
 for x in lex:
-	div.append(create_paragraph(x,dic))
+	div.append(create_paragraph(x,dic,langs))
 ###end add params###
 
 
