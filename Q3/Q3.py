@@ -141,8 +141,14 @@ def create_paragraph(string,dic,langs):
 		else:
 			ret_string = ret_string + word + ' '
 
+	ret_string = fix_same_follwing_tags(ret_string)
+
 	root = etree.fromstring(ret_string)
 	return root
+
+
+def fix_same_follwing_tags(string):
+	return string.replace('</orgName> <orgName>','').replace('</persName> <persName>','').replace('</placeName> <placeName>','')
 
 def create_xml_bibl_element(bibl):
 	top = Element('bibl')
