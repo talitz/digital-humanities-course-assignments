@@ -15,13 +15,28 @@ def seperate_file_to_paragraph(filename):
 	
 def get_gender(filename):
 	string = open(filename,'rb').read()
-	if 'נולד ' in string:
+	if 'נולד ב' in string:
 		return 'male'
-	elif 'נולדה ' in string:	
+	elif 'נולדה ב' in string:	
 		return 'female'
 	else:
 		return 'unknown'
+            
+            
+def nextword(target, source):
+        for i, w in enumerate(source):
+            if w == target:
+                return source[i+1]
 
+def get_where_was_born():
+	string = seperate_file_to_paragraph(file_path)[3].decode('utf-8')
+	for word in string.split():
+            if u'נולד' == word:
+                return nextword(u'נולד',string.split())[1:]
+            if u'נולדה' == word:
+                return nextword(u'נולדה',string.split())[1:]
+        return 'unknown'
+    
 ###### classes ######
 class TaggedWords(object):
 	"""docstring for words"""
@@ -267,6 +282,7 @@ listPerson = SubElement(body, 'listPerson')
 person = SubElement(listPerson,'person')
 role = seperate_file_to_paragraph(file_path)[2].decode('utf-8');
 sex = get_gender(file_path)
+where_was_born = get_where_was_born()
 person.set('xml:id','dm')
 person.set('role',role)
 person.set('sex',sex)
@@ -280,6 +296,11 @@ surname.text = author_surname
 
 birth = SubElement(person,'birth')
 birth.set('when',dob)
+
+placeName = SubElement(birth,'placeName')
+settlement = SubElement(placeName,'settlement')
+settlement.set('type','city')
+settlement.text = where_was_born
 
 education = SubElement(person, 'education')
 education.text = " "
